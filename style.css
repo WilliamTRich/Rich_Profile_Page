@@ -1,0 +1,158 @@
+* {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+}
+/* BODY */
+body {
+    
+    background-color: white;
+}
+/* Nav Bar */
+header {
+    display: flex;
+    padding-left: 1rem;
+    background-color: #000000;
+}
+
+header :is(.nav, .buttonNav, .buttonNav button, .navLink > a) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.nav {
+    flex: 3;
+    justify-content: flex-start;
+    gap: 7rem;
+}
+
+.large {
+    padding-bottom: 1%;
+    font-size: 3.5rem;
+    cursor: default;
+}
+
+.buttonNav {
+    flex: 2;
+    justify-content: center;
+}
+
+.buttonNav button {
+    padding: .5rem 3rem;
+    background-color: #17A2B8;
+    border-style: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+/* MAIN BODY */
+main {
+    display: flex;
+    /* border: 3px solid red; */
+    gap: 2rem;
+    padding: 3rem 14rem;
+}
+/* Columns */
+main :is(.columnLeft, .columnRight) {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+main :is(.rowOne, .rowTwo) {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    gap: .2rem;
+    list-style: none;
+    font-size: 2rem;
+    border: 5px solid gray;
+}
+
+main :is(.columnLeft li, .columnRight li, .profiles) {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.columnLeft :is(.columnHeader), .columnRight :is(.columnHeader) {
+    padding: 1rem 0 1rem 1rem;
+    gap: 1rem;
+    font-size: 2.7rem;
+    background-color: #333333;
+    color: white;
+}
+/* Column Left */
+.columnLeft {
+    flex: 3;
+}
+
+.columnLeft :is(.rowOne img, .rowTwo img){
+    height: 1.5rem;
+}
+/* Row One */
+.columnLeft .rowOne {
+    position: relative;
+    padding-top: 11.5rem;
+}
+
+#aqua {
+    height: 7rem;
+    width: 100%;
+    padding: 0;
+    position: absolute !important;
+    right: 0;
+    top: 0;
+    background-color: #17A2B8;
+}
+
+#largeProfile {
+    border: 5px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 2rem;
+    left: 2.2rem;
+    height: 10rem;
+    width: 10rem;
+}
+/* Row Two */
+.gray {
+    color: gray;
+    font-size: 1.5rem;
+}
+/* Column Right */
+.columnRight {
+    flex: 2;
+}
+
+.columnRight :is(.rowOne span, .rowTwo span) {
+    display: flex;
+    height: auto;
+    width: auto;
+    padding: .4rem;
+    background-color: gray;
+    border: 2px solid gray;
+    border-radius: 100%;
+}
+
+.columnRight :is(.rowOne img, .rowTwo img) {
+    height: 4rem;
+    width: 4rem;
+    border: 4px solid gray;
+    border-radius: 50%;
+}
+/* Row One */
+.columnContent {
+    display: flex;
+    justify-content: space-between;
+}
+/* Row Two */
+#footer {
+    border-top: 4px solid gray;
+}
