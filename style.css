@@ -3,11 +3,6 @@
     margin: 0;
     padding: 0;
 }
-/* BODY */
-body {
-    
-    background-color: white;
-}
 /* Nav Bar */
 header {
     display: flex;
@@ -54,7 +49,7 @@ main {
     display: flex;
     /* border: 3px solid red; */
     gap: 2rem;
-    padding: 3rem 14rem;
+    padding: 3% 20%;
 }
 /* Columns */
 main :is(.columnLeft, .columnRight) {
