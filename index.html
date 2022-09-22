@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="./index.js"></script>
     <title>Profile-Page</title>
 </head>
 <body>
@@ -37,7 +38,7 @@
                     </li>
                     <li>
                         <img src="./assets/icons/gear.png" alt="Gear-Icon">
-                        <a href="#">edit profile</a>
+                        <a href="#" onclick="changeProfile(this)">edit profile</a>
                     </li>
                 </ul>
             </div>
@@ -63,8 +64,8 @@
                             Todd E
                         </div>
                         <div class="acceptDeny">
-                            <img src="./assets/icons/accept-circle.png" alt="Accept-Circle">
-                            <img src="./assets/icons/close-circle.png" alt="Close-Circle">
+                            <img src="./assets/icons/accept-circle.png" alt="Accept-Circle" onclick="removeElement(this)">
+                            <img src="./assets/icons/close-circle.png" alt="Close-Circle" onclick="removeElement(this)">
                         </div>
                     </li>
                     <li class="columnContent">
@@ -73,8 +74,8 @@
                             Phil K
                         </div>
                         <div class="acceptDeny">
-                            <img src="./assets/icons/accept-circle.png" alt="Accept-Circle">
-                            <img src="./assets/icons/close-circle.png" alt="Close-Circle">
+                            <img src="./assets/icons/accept-circle.png" alt="Accept-Circle" onclick="removeElement(this)">
+                            <img src="./assets/icons/close-circle.png" alt="Close-Circle" onclick="removeElement(this)">
                         </div>
                     </li>
                 </ul>
